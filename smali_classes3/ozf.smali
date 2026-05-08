@@ -1,0 +1,11 @@
+.class public interface abstract Lozf;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lb69;
+
+
+# virtual methods
+.method public abstract a()I
+.end method

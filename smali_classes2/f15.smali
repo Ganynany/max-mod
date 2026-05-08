@@ -1,0 +1,66 @@
+.class public final Lf15;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:Landroid/net/Uri;
+
+.field public b:J
+
+.field public c:I
+
+.field public d:[B
+
+.field public e:Ljava/util/Map;
+
+.field public f:J
+
+.field public g:J
+
+.field public h:Ljava/lang/String;
+
+.field public i:I
+
+
+# virtual methods
+.method public final a()Lh15;
+    .locals 14
+
+    iget-object v0, p0, Lf15;->a:Landroid/net/Uri;
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Lh15;
+
+    iget-object v2, p0, Lf15;->a:Landroid/net/Uri;
+
+    iget-wide v3, p0, Lf15;->b:J
+
+    iget v5, p0, Lf15;->c:I
+
+    iget-object v6, p0, Lf15;->d:[B
+
+    iget-object v7, p0, Lf15;->e:Ljava/util/Map;
+
+    iget-wide v8, p0, Lf15;->f:J
+
+    iget-wide v10, p0, Lf15;->g:J
+
+    iget-object v12, p0, Lf15;->h:Ljava/lang/String;
+
+    iget v13, p0, Lf15;->i:I
+
+    invoke-direct/range {v1 .. v13}, Lh15;-><init>(Landroid/net/Uri;JI[BLjava/util/Map;JJLjava/lang/String;I)V
+
+    return-object v1
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "The uri must be set."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method

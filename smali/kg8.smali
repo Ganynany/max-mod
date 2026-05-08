@@ -1,0 +1,88 @@
+.class public final Lkg8;
+.super Lcrh;
+.source "SourceFile"
+
+# interfaces
+.implements Lff7;
+
+
+# instance fields
+.field public final synthetic X:Lo8c;
+
+.field public final synthetic o:Lng8;
+
+
+# direct methods
+.method public constructor <init>(Lng8;Lo8c;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    iput-object p1, p0, Lkg8;->o:Lng8;
+
+    iput-object p2, p0, Lkg8;->X:Lo8c;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p3}, Lcrh;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lgt4;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lkg8;->l(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Lkg8;
+
+    sget-object p2, Ltpi;->a:Ltpi;
+
+    invoke-virtual {p1, p2}, Lkg8;->n(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final l(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 2
+
+    new-instance p1, Lkg8;
+
+    iget-object v0, p0, Lkg8;->o:Lng8;
+
+    iget-object v1, p0, Lkg8;->X:Lo8c;
+
+    invoke-direct {p1, v0, v1, p2}, Lkg8;-><init>(Lng8;Lo8c;Lkotlin/coroutines/Continuation;)V
+
+    return-object p1
+.end method
+
+.method public final n(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    invoke-static {p1}, Lcm0;->R(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lkg8;->X:Lo8c;
+
+    iget-object p1, p1, Lo8c;->a:Ljava/lang/String;
+
+    iget-object v0, p0, Lkg8;->o:Lng8;
+
+    invoke-static {v0, p1}, Lng8;->a(Lng8;Ljava/lang/String;)I
+
+    move-result p1
+
+    new-instance v0, Ljava/lang/Integer;
+
+    invoke-direct {v0, p1}, Ljava/lang/Integer;-><init>(I)V
+
+    return-object v0
+.end method

@@ -1,0 +1,6 @@
+.class public interface abstract Lgxh;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkdg;
